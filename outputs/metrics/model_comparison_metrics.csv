@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-score,ROC-AUC
+Baseline Model,0.8055,0.6572,0.5588,0.604,0.842
+Engineered Model,0.7991,0.6532,0.5187,0.5782,0.8423
+Engineered (Balanced),0.7331,0.4983,0.7914,0.6116,0.8419

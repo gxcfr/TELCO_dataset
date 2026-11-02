@@ -1,0 +1,83 @@
+{
+  "raw_quality": {
+    "total_records": 7043,
+    "total_columns": 21,
+    "blank_total_charges": 11,
+    "duplicate_rows": 0,
+    "missing_values_by_col": {
+      "customerID": 0,
+      "gender": 0,
+      "SeniorCitizen": 0,
+      "Partner": 0,
+      "Dependents": 0,
+      "tenure": 0,
+      "PhoneService": 0,
+      "MultipleLines": 0,
+      "InternetService": 0,
+      "OnlineSecurity": 0,
+      "OnlineBackup": 0,
+      "DeviceProtection": 0,
+      "TechSupport": 0,
+      "StreamingTV": 0,
+      "StreamingMovies": 0,
+      "Contract": 0,
+      "PaperlessBilling": 0,
+      "PaymentMethod": 0,
+      "MonthlyCharges": 0,
+      "TotalCharges": 0,
+      "Churn": 0
+    },
+    "dtypes": {
+      "customerID": "str",
+      "gender": "str",
+      "SeniorCitizen": "int64",
+      "Partner": "str",
+      "Dependents": "str",
+      "tenure": "int64",
+      "PhoneService": "str",
+      "MultipleLines": "str",
+      "InternetService": "str",
+      "OnlineSecurity": "str",
+      "OnlineBackup": "str",
+      "DeviceProtection": "str",
+      "TechSupport": "str",
+      "StreamingTV": "str",
+      "StreamingMovies": "str",
+      "Contract": "str",
+      "PaperlessBilling": "str",
+      "PaymentMethod": "str",
+      "MonthlyCharges": "float64",
+      "TotalCharges": "str",
+      "Churn": "str"
+    }
+  },
+  "outlier_audit": {
+    "tenure": {
+      "Q1 (25%)": 9.0,
+      "Q3 (75%)": 55.0,
+      "IQR": 46.0,
+      "Lower Bound": -60.0,
+      "Upper Bound": 124.0,
+      "Outlier Count": 0,
+      "Outlier Percentage": 0.0
+    },
+    "MonthlyCharges": {
+      "Q1 (25%)": 35.5,
+      "Q3 (75%)": 89.85,
+      "IQR": 54.35,
+      "Lower Bound": -46.02,
+      "Upper Bound": 171.38,
+      "Outlier Count": 0,
+      "Outlier Percentage": 0.0
+    },
+    "TotalCharges": {
+      "Q1 (25%)": 398.55,
+      "Q3 (75%)": 3786.6,
+      "IQR": 3388.05,
+      "Lower Bound": -4683.52,
+      "Upper Bound": 8868.67,
+      "Outlier Count": 0,
+      "Outlier Percentage": 0.0
+    }
+  }
+}

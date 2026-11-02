@@ -1,0 +1,47 @@
+Feature,Coefficient,Odds_Ratio,Impact
+tenure,-1.2552,0.285,Decreases Churn Odds
+Contract_Two year,-0.7594,0.4679,Decreases Churn Odds
+InternetService_Fiber optic,0.648,1.9118,Increases Churn Odds
+InternetService_DSL,-0.6436,0.5254,Decreases Churn Odds
+MonthlyCharges,-0.6012,0.5482,Decreases Churn Odds
+Contract_Month-to-month,0.586,1.7968,Increases Churn Odds
+TotalCharges,0.5326,1.7033,Increases Churn Odds
+PaperlessBilling_No,-0.3307,0.7184,Decreases Churn Odds
+DeviceProtection_No internet service,-0.293,0.7461,Decreases Churn Odds
+OnlineSecurity_No internet service,-0.293,0.7461,Decreases Churn Odds
+InternetService_No,-0.293,0.7461,Decreases Churn Odds
+OnlineBackup_No internet service,-0.293,0.7461,Decreases Churn Odds
+TechSupport_No internet service,-0.293,0.7461,Decreases Churn Odds
+StreamingTV_No internet service,-0.293,0.7461,Decreases Churn Odds
+StreamingMovies_No internet service,-0.293,0.7461,Decreases Churn Odds
+MultipleLines_No,-0.2714,0.7623,Decreases Churn Odds
+Dependents_Yes,-0.2562,0.774,Decreases Churn Odds
+SeniorCitizen_No,-0.2176,0.8044,Decreases Churn Odds
+StreamingMovies_Yes,0.2123,1.2365,Increases Churn Odds
+StreamingTV_Yes,0.2119,1.2361,Increases Churn Odds
+PaymentMethod_Credit card (automatic),-0.2086,0.8117,Decreases Churn Odds
+StreamingMovies_No,-0.2079,0.8123,Decreases Churn Odds
+StreamingTV_No,-0.2075,0.8126,Decreases Churn Odds
+PaymentMethod_Electronic check,0.2056,1.2282,Increases Churn Odds
+PaymentMethod_Bank transfer (automatic),-0.1803,0.835,Decreases Churn Odds
+OnlineSecurity_No,0.1655,1.18,Increases Churn Odds
+OnlineSecurity_Yes,-0.1612,0.8512,Decreases Churn Odds
+PhoneService_Yes,-0.1581,0.8538,Decreases Churn Odds
+gender_Female,-0.1552,0.8562,Decreases Churn Odds
+Partner_No,-0.155,0.8564,Decreases Churn Odds
+TechSupport_No,0.1413,1.1518,Increases Churn Odds
+TechSupport_Yes,-0.1369,0.872,Decreases Churn Odds
+Partner_Yes,-0.1335,0.875,Decreases Churn Odds
+gender_Male,-0.1333,0.8752,Decreases Churn Odds
+PhoneService_No,-0.1305,0.8777,Decreases Churn Odds
+MultipleLines_No phone service,-0.1305,0.8777,Decreases Churn Odds
+Contract_One year,-0.1152,0.8912,Decreases Churn Odds
+MultipleLines_Yes,0.1134,1.12,Increases Churn Odds
+PaymentMethod_Mailed check,-0.1053,0.9001,Decreases Churn Odds
+SeniorCitizen_Yes,-0.0709,0.9315,Decreases Churn Odds
+PaperlessBilling_Yes,0.0422,1.0431,Increases Churn Odds
+OnlineBackup_No,0.0415,1.0424,Increases Churn Odds
+OnlineBackup_Yes,-0.0371,0.9636,Decreases Churn Odds
+Dependents_No,-0.0324,0.9681,Decreases Churn Odds
+DeviceProtection_Yes,0.0308,1.0313,Increases Churn Odds
+DeviceProtection_No,-0.0264,0.9739,Decreases Churn Odds

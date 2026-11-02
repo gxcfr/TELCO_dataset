@@ -1,4 +1,4 @@
-# Telco Customer Churn Prediction: Complete End-to-End Project Documentation & Viva Defense Guide
+# Telco Customer Churn Prediction: Complete End-to-End Project Documentation
 
 **Project Repository:** [https://github.com/gxcfr/TELCO_dataset](https://github.com/gxcfr/TELCO_dataset)  
 **Dataset:** IBM Telco Customer Churn (`WA_Fn-UseC_-Telco-Customer-Churn.csv`)  

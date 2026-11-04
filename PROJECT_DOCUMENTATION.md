@@ -371,26 +371,6 @@ Local URL: http://localhost:8501
      - Predicted Class Badge (`High Risk Churn` or `Likely Retained`).
      - Churn Probability & Retention Probability gauge bar.
      - Tailored retention action recommendations based on the customer's risk factors.
-
----
-
-## 12. Academic Viva Defense Questions & Answers
-
-### Q1: Why use Logistic Regression instead of Random Forest or XGBoost?
-> **Answer:** Logistic Regression is the standard benchmark for binary classification because it outputs well-calibrated posterior probabilities and provides exact mathematical transparency. By examining coefficients and calculating Odds Ratios ($e^\beta$), we can explicitly explain to stakeholders which features increase or decrease the odds of churning. In customer retention, understanding *why* a customer is at risk is just as important as predicting the risk.
-
-### Q2: How did you ensure there was no data leakage in your preprocessing?
-> **Answer:** We performed an 80:20 stratified train-test split first. All feature scaling statistics (`StandardScaler` mean and standard deviation) and categorical mappings (`OneHotEncoder` categories) were fitted strictly on `X_train`. The test set `X_test` was only transformed. Furthermore, all engineered features were computed purely from existing predictor columns without utilizing the target column `Churn`.
-
-### Q3: Why did you set TotalCharges to 0.0 for 11 records instead of dropping them or imputing with the median?
-> **Answer:** An inspection of the data revealed that all 11 customers with blank `TotalCharges` had `tenure == 0`. These are newly registered subscribers who enrolled during the current billing period and have not yet completed a billing cycle. Setting `TotalCharges = 0.0` accurately reflects that cumulative billed revenue at month zero is $0.00. Imputing with the median (~$2,283) would corrupt customer spending history by assigning thousands of dollars of non-existent charges.
-
-### Q4: Why does the balanced model have lower accuracy but higher recall?
-> **Answer:** In imbalanced classification, accuracy is dominated by the majority class (73.5% non-churners). By applying `class_weight='balanced'`, the optimization objective penalizes False Negatives (missing a churner) more heavily than False Positives. This shifts the decision boundary to flag borderline cases, increasing Recall from **51.87% to 79.14%** while slightly reducing overall accuracy to 73.31%. For a telecom company, this trade-off is highly advantageous because losing a customer is far more costly than sending an unnecessary retention perk.
-
-### Q5: Can Logistic Regression coefficients be interpreted as causal effects?
-> **Answer:** No. Logistic regression coefficients represent statistical associations (conditional on all other variables in the model), not causal relationships. For example, Fiber Optic internet has a positive coefficient ($\text{OR} = 1.92$), meaning Fiber Optic users are associated with higher churn odds, but Fiber Optic service does not necessarily *cause* churn; the association is confounded by higher monthly charges and competitor fiber marketing.
-
 ---
 
 ## 13. Limitations & Future Enhancements
